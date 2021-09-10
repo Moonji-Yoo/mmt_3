@@ -1,0 +1,37 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>명문택</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <h1><a href="index.html" title="강명수,유문지,송권택의 줄임말이다.">명문택</a>
+    <input type="button" value="다크모드" onclick="
+    var bodymode = document.querySelector('body');
+    if(this.value === '다크모드'){
+        bodymode.style.backgroundColor='black';
+        bodymode.style.color='gray';
+        this.value='다크모드해제';
+      } else {
+        bodymode.style.backgroundColor='white';
+        bodymode.style.color='black';
+        this.value='다크모드';
+    }
+    ">
+  </h1>
+  <div id="grid">
+    <ul>
+      <li class="right"><a href="강명수.html" title="유문지의 첫번째 수하, 강명수이다.">강명수</a></li>
+      <li class="right"><a href="유문지.html" title="웹사이트의 개발자, 천재 유문지">유문지</a></li>
+      <li><a href="송권택.html" title="유문지의 두번째 수하, 송권택이다.">송권택</a></li>
+    </ul>
+    <div id="what"> <h3>이름 : 강명수</h3>
+      <div id="img"><img src="강명수.jpg" width="30%"></div>
+      특징 : 병신이다.<br>
+      주소 : <a href="https://www.instagram.com/gimbab_big/">인스타그램</a>
+    </div>
+  </div>
+  <h4>#개발자유문지#</h4>
+</body>
+</html>
