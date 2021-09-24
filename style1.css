@@ -1,4 +1,8 @@
-h1 {
+body {
+  font-family :Arial, Helvetica, sans-serif
+}
+
+.mainBar {
     font-size: 45px;
     text-align:center;
     border-bottom: 3px solid gray;
@@ -26,8 +30,23 @@ li {
 #img {
   text-align: center;
 }
-input {
+.nightDayHandler {
   position:absolute;
   top:5px;
   right:10px;
+}
+
+.notShowing {
+  display : none;
+}
+
+.showing {
+  display : block;
+}
+
+.door,
+.form {
+  color : green;
+  vertical-align: middle;
+  text-align : center;
 }
