@@ -50,3 +50,8 @@ li {
   vertical-align: middle;
   text-align : center;
 }
+
+.information {
+  position : absolute;
+  top : 0;
+}
