@@ -3,23 +3,16 @@
 <head>
   <title>명문택</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="style1.css"
+  <link rel="stylesheet" href="style1.css">
+  <script src="color.js">
+  </script>
 </head>
 <body>
-  <h1><a href="index.html" title="강명수,유문지,송권택의 줄임말이다.">명문택</a>
-      <input type="button" value="다크모드" onclick="
-      var bodymode = document.querySelector('body');
-      if(this.value === '다크모드'){
-          bodymode.style.backgroundColor='black';
-          bodymode.style.color='gray';
-          this.value='다크모드해제';
-        } else {
-          bodymode.style.backgroundColor='white';
-          bodymode.style.color='black';
-          this.value='다크모드';
-      }
-      ">
-  </h1>
+  <div id="js-enter" class = "notShowing">
+    <h4 class="js-greeting greeting"></h4>
+    <h4 class="js-clock"></h4>
+  <h1 class="mainBar"><a href="index.html" title="강명수,유문지,송권택의 줄임말이다.">명문택</a></h1>
+      <input class="nightDayHandler" type="button" value="야간모드" onclick= 'nightDayHandler(this)' >
   <ul>
     <li class="right"><a href="강명수.html" title="유문지의 첫번째 수하, 강명수이다.">강명수</a></li>
     <li class="right"><a href="유문지.html" title="웹사이트의 개발자, 천재 유문지">유문지</a></li>
@@ -34,5 +27,14 @@
   학술, 군사, 음악 등을 다루는 마르크스 주의 소속 비영리단체이다.
   <br>셋이 모이는 날엔 천재지변이 일어난 다는 속설이 있다.</p></h3>
   <h4>#개발자 유문지#</h4>
+  </div>
+  <h1 class="door">
+    명문택
+  </h1>
+  <form class="js-form form">
+    <input class="js-input"type="text" placeholder="이름을 입력하세요">
+  </form>
+  <script src="clock.js"></script>
+  <script src="greeting.js"></script>
 </body>
 </html>
